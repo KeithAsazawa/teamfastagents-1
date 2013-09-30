@@ -1,4 +1,6 @@
 Teamfastagents::Application.routes.draw do
+  
+  resources :blogs
   resources :listings
 
   root :to => 'pages#index'
