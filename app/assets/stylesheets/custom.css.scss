@@ -10,6 +10,10 @@ body {
 	padding-top: 70px;
 }
 
+h1 {
+	margin-bottom: 20px;
+}
+
 li {
 	list-style: none;
 }
@@ -23,6 +27,13 @@ li {
 .agent_circle {
 	max-height: 250px;
 	border: 5px solid orange;
+}
+
+.blog_body {
+	border: 1px solid #2980B9;
+	ul {
+		float: left;
+	}
 }
 
 .center {
@@ -45,7 +56,7 @@ li {
 }
 
 .fast {
-	width: 150px;
+	width: 160px;
 	margin-left: 20px;
 	margin-top: 20px;
 }
@@ -53,6 +64,7 @@ li {
 .featured_listings {
 	background-color: #2980b9;
 	padding: 5px;
+	padding-bottom: 20px;
 }
 
 .featured_listings div {
@@ -87,6 +99,11 @@ li {
 	margin: 5px 5px 20px 0px;
 }
 
+.mjre {
+	height: 50px;
+	margin: 13px 0px 0px 15px;
+}
+
 .orange_text {
 	color: #F49E09;
 	text-decoration: none;
@@ -101,6 +118,10 @@ li {
 	font-size: 1.75em;
 	margin-left: -15px;
 	margin-top: -15px;
+}
+
+.time {
+	color: gray;
 }
 
 .white_text {

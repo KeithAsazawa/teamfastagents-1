@@ -1,25 +1,22 @@
-<h1>Listing blogs</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @blogs.each do |blog| %>
-  <tr>
-    <td><%= blog.title %></td>
-    <td><%= blog.content %></td>
-    <td><%= link_to 'Show', blog %></td>
-    <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-    <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
+<div class="row-fluid"></div>
+<div class="span10 blog_body text-center">
+  <h1 style="color: white;">Blog</h1>
+  <% @blogs.each do |blog| %>
+    <div class="span3">
+    <ul>
+      <li><h2><%= blog.title %></h2></li>
+      <li><%= blog.content %></li>
+      <!-- <li><%= link_to 'Show', blog %></li> -->
+      <li class="time">Posted <%= time_ago_in_words(blog.created_at) %> ago.</li>
+      <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
+      <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    </ul>
+    </div>
+  <% end %>
+</div>
+ <%= link_to 'New Blog', new_blog_path %>
+<div class="span3">
+  dkjfhsdhjflsj
+</div>
 <br />
-
-<%= link_to 'New Blog', new_blog_path %>
