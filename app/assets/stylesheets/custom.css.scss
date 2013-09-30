@@ -7,7 +7,7 @@ a:link {
 }
 
 body {
-	padding-top: 40px;
+	padding-top: 70px;
 }
 
 li {
@@ -43,6 +43,12 @@ li {
 	font-size: 20px;
 }
 
+.fast {
+	width: 150px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
 .featured_listings {
 	background-color: #2980b9;
 	padding: 5px;
@@ -66,12 +72,17 @@ li {
 	max-height: 202px;
 }
 
+.footer {
+	background-color: #2E2E2E;
+	height: 75px;
+}
+
 .gray_text {
 	color: gray;
 }
 
 .logo {
-	width: 400px;
+	width: 500px;
 	margin: 35px 0px 20px 0px;
 }
 
