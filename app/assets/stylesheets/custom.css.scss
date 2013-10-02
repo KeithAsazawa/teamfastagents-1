@@ -29,8 +29,12 @@ li {
 	border: 5px solid orange;
 }
 
+.blog_title {
+	color: #FD8F01;
+}
+
 .blog_body {
-	border: 1px solid #2980B9;
+	/*border: 1px solid #2980B9;*/
 	ul {
 		float: left;
 	}
@@ -42,6 +46,10 @@ li {
 
 .clear {
 	clear: both;
+}
+
+.contact {
+	margin-top: 60px;
 }
 
 .david_brand {

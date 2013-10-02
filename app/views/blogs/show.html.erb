@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
-
+<% if @blog.image_file_name %>
+  <%= image_tag @blog.image.url(:medium) %>
+<% end %>
 <p>
-  <b>Title:</b>
-  <%= @blog.title %>
+<h1><%= @blog.title %></h1>
+Posted <%= time_ago_in_words(@blog.created_at) %> ago.  
 </p>
 
 <p>
-  <b>Content:</b>
   <%= @blog.content %>
 </p>
 

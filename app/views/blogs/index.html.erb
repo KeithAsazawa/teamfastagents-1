@@ -1,22 +1,32 @@
 
 <div class="row-fluid"></div>
-<div class="span10 blog_body text-center">
-  <h1 style="color: white;">Blog</h1>
+<div class="span9 blog_body text-center">
+  <h1>Fast Agents Blog</h1>
   <% @blogs.each do |blog| %>
-    <div class="span3">
+    <div class="span4 blogs text-center">
     <ul>
-      <li><h2><%= blog.title %></h2></li>
-      <li><%= blog.content %></li>
+      <li class="blog_title"><h4><%= blog.title %></h4></li>
+      <li><%= image_tag blog.image.url(:medium) %></li>
+      <li><%= truncate(blog.content, :length => 400) %></li>
       <!-- <li><%= link_to 'Show', blog %></li> -->
       <li class="time">Posted <%= time_ago_in_words(blog.created_at) %> ago.</li>
+      <li><%= link_to 'Read more...', blog_path(blog) %> </li>
       <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
       <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>
     </ul>
     </div>
   <% end %>
+  <%= link_to 'New Blog', new_blog_path %>
 </div>
- <%= link_to 'New Blog', new_blog_path %>
-<div class="span3">
-  dkjfhsdhjflsj
+ 
+<div class="span3 contact text-center">
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Email">
+    <textarea rows="4" placeholder="Questions or comments?"></textarea>
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
 </div>
 <br />
