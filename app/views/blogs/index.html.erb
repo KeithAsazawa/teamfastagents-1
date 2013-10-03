@@ -1,25 +1,29 @@
-
+<div class="row-fluid">
+  <div class="span9 text-center">
+    <img src="images/fastagentsblog.png" class="blog_image">
+  </div>
+</div>
 <div class="row-fluid"></div>
 <div class="span9 blog_body text-center">
-  <h1>Fast Agents Blog</h1>
+  
   <% @blogs.each do |blog| %>
     <div class="span4 blogs text-center">
     <ul>
-      <li class="blog_title"><h4><%= blog.title %></h4></li>
-      <li><%= image_tag blog.image.url(:medium) %></li>
+      <li class="blog_title"><h4><%= link_to blog.title, blog_path(blog) %></h4></li>
+      <li><%= image_tag blog.image.url(:medium) %></li><br />
       <li><%= truncate(blog.content, :length => 400) %></li>
       <!-- <li><%= link_to 'Show', blog %></li> -->
       <li class="time">Posted <%= time_ago_in_words(blog.created_at) %> ago.</li>
       <li><%= link_to 'Read more...', blog_path(blog) %> </li>
-      <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
-      <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      <!-- <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
+      <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li> -->
     </ul>
     </div>
   <% end %>
-  <%= link_to 'New Blog', new_blog_path %>
 </div>
  
 <div class="span3 contact text-center">
+  <h4>Contact Us</h4><br />
   <form>
     <input type="text" placeholder="Name">
     <input type="text" placeholder="Email">
@@ -29,4 +33,15 @@
     </div>
   </form>
 </div>
-<br />
+<div class="span3 text-center"> 
+  <h4>Follow Us</h4>
+    <tr class="social_media">
+      <td><a href="https://www.facebook.com/FastAgent"><i class="icon-facebook-sign icon-3x"></i></a></td>
+      <td><a href="https://www.twitter.com/kenny_troung"><i class="icon-twitter-sign icon-3x"></i></a></td>
+      <td><a href="http://www.pinterest.com/kennyeast/real-estate/"><i class="icon-pinterest-sign icon-3x"></i></a></td>
+      <td><a href="https://www.linkedin.com/in/fastagent"><i class="icon-linkedin-sign icon-3x"></i></a></td>
+      <td><a href="http://www.instagram.com/kenny_east"><i class="icon-instagram icon-3x"></i></a></td>
+      <td><a href="https://plus.google.com/u/0/105933204608970323186/posts"><i class="icon-google-plus-sign icon-3x"></i></a></td>
+    </tr>
+    </ul>
+</div>

@@ -8,4 +8,5 @@ Teamfastagents::Application.routes.draw do
   get 'contact' => 'pages#contact'
   get 'about' => 'pages#about'
   get 'blog' => 'pages#blog'
+  get 'floorplans' => 'pages#floorplans'
 end

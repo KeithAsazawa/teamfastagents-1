@@ -25,6 +25,7 @@ class BlogsController < ApplicationController
   # GET /blogs/new.json
   def new
     @blog = Blog.new
+    3.times { @blog.assets.build }
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1/edit
   def edit
     @blog = Blog.find(params[:id])
+    3.times { @blog.assets.build }
   end
 
   # POST /blogs

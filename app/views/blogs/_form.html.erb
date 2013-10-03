@@ -1,8 +1,7 @@
-<%= form_for(@blog) do |f| %>
+<%= form_for @blog, :html => { :multipart => true} do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
-
       <ul>
       <% @blog.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -24,6 +23,13 @@
     <%= f.label :image %><br />
     <%= f.file_field :image, class: "btn btn-large" %>
   </div>
+
+  <%= f.fields_for :assets do |asset_fields| %>
+    <p>
+      <%= asset_fields.file_field :asset %>
+      <%= link_to image_tag(asset_fields.object.asset.url(:thumb)), asset_fields.object.asset.url(:original) %>
+    </p>
+  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

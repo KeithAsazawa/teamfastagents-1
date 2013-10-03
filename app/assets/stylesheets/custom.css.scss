@@ -31,13 +31,34 @@ li {
 
 .blog_title {
 	color: #FD8F01;
+	a:visited {
+		color: #FD8F01;
+	}
+	a:hover {
+		background-color: white;
+	}
 }
 
 .blog_body {
-	/*border: 1px solid #2980B9;*/
 	ul {
 		float: left;
 	}
+}
+
+.blog_show {
+	min-height: 650px;
+}
+
+.blogs {
+	margin-bottom: 20px;
+}
+
+.blog_image {
+	width: 400px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+/*	padding-bottom: 15px;
+	border-bottom: 1px solid gray;*/
 }
 
 .center {
@@ -49,7 +70,7 @@ li {
 }
 
 .contact {
-	margin-top: 60px;
+	margin-top: 5px;
 }
 
 .david_brand {
@@ -63,10 +84,17 @@ li {
 	font-size: 20px;
 }
 
+.facebook {
+	color: #425F9C;
+}
+
 .fast {
 	width: 160px;
 	margin-left: 20px;
 	margin-top: 20px;
+	a:hover {
+		color: #2E2E2E;
+	}
 }
 
 .featured_listings {
@@ -102,6 +130,30 @@ li {
 	color: gray;
 }
 
+.icon-facebook-sign {
+	color: #43609C;
+}
+
+.icon-twitter-sign {
+	color: #01ADEE;
+}
+
+.icon-pinterest-sign {
+	color: #CB2027;
+}
+
+.icon-linkedin-sign {
+	color: #1784BC;
+}
+
+.icon-instagram {
+	color: #A57B62;
+}
+
+.icon-google-plus-sign {
+	color: #D03E2F;
+}
+
 .logo {
 	width: 500px;
 	margin: 5px 5px 20px 0px;
@@ -127,6 +179,14 @@ li {
 	margin-left: -15px;
 	margin-top: -15px;
 }
+
+.show_image {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+	/*border: 2px solid #E8E8E8;*/
+}
+
 
 .time {
 	color: gray;

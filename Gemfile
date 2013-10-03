@@ -9,6 +9,7 @@ gem "font-awesome-rails"
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk', '~> 1.5.7'
 gem 'jquery-rails'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

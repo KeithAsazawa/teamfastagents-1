@@ -1,16 +1,24 @@
 <p id="notice"><%= notice %></p>
-<% if @blog.image_file_name %>
-  <%= image_tag @blog.image.url(:medium) %>
-<% end %>
-<p>
-<h1><%= @blog.title %></h1>
-Posted <%= time_ago_in_words(@blog.created_at) %> ago.  
-</p>
 
-<p>
-  <%= @blog.content %>
-</p>
+<div class="span9 blog_show">	
+	<p>	
+		<h2 class="blog_title"><%= @blog.title %></h2>
+		Posted <%= time_ago_in_words(@blog.created_at) %> ago.  
+	</p>
+
+	<div class="show_image">
+		<% if @blog.image_file_name %>
+	  	<%= image_tag @blog.image.url(:medium) %>
+		<% end %>
+	</div>
+	<p class="blog_content">
+	  <%= @blog.content %>
+	</p>
+	<p>
+	<!-- <%= link_to 'Edit', edit_blog_path(@blog) %> | -->
+	<%= link_to 'Back', blogs_path %>
+	</p>
+	<div class="clear"></div>
+</div>
 
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
