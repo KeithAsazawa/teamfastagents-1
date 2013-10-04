@@ -1,6 +1,22 @@
 @import 'bootstrap';
 @import 'bootstrap-responsive';
 @import "flat-ui";
+@media (max-width: 978px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
+
+    body {
+      padding-top:0px !important;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
 
 a:link {
 	text-decoration: none !important;
@@ -17,11 +33,20 @@ h1 {
 li {
 	list-style: none;
 }
+/*
+p {
+	text-indent: 30px;
+}*/
 
 .about_us {
 	background-color: #34495e;
 	color: #fff;
 	padding: 3px;
+}
+
+.about_page_div {
+	margin-top: 25px;
+	margin-left: 20px;
 }
 
 .agent_circle {
@@ -37,6 +62,10 @@ li {
 	a:hover {
 		background-color: white;
 	}
+}
+
+.about_page {
+	min-height: 650px;
 }
 
 .blog_body {
@@ -71,6 +100,14 @@ li {
 
 .contact {
 	margin-top: 5px;
+}
+
+.contact_left {
+	margin-top: 110px;
+}
+
+.contact_page {
+	min-height: 650px;
 }
 
 .david_brand {
@@ -160,8 +197,13 @@ li {
 }
 
 .mjre {
-	height: 50px;
-	margin: 13px 0px 0px 15px;
+	height: 32px;
+	margin: 22px 0px 0px 15px;
+}
+
+.mjre_number {
+	margin-top: 35px;
+	font-size: 70px;
 }
 
 .orange_text {
@@ -186,7 +228,6 @@ li {
 	margin-right: 20px;
 	/*border: 2px solid #E8E8E8;*/
 }
-
 
 .time {
 	color: gray;

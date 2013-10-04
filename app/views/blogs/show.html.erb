@@ -12,7 +12,7 @@
 		<% end %>
 	</div>
 	<p class="blog_content">
-	  <%= @blog.content %>
+	  <%= simple_format(@blog.content) %>
 	</p>
 	<p>
 	<!-- <%= link_to 'Edit', edit_blog_path(@blog) %> | -->
