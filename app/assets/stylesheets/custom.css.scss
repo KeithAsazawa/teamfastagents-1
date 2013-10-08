@@ -251,7 +251,7 @@ p {
 
 .mjre_number {
 	margin-top: 35px;
-	font-size: 70px;
+	font-size: 60px;
 }
 
 .orange_text {
@@ -288,5 +288,28 @@ p {
 
 .white_text {
 	color: #fff;
+}
+
+/* Flexible iFrame */ /* Flexible iFrame */ /* Flexible iFrame */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid #DCE4EC;
+		background-color: #F6F6F6;
+		border-radius: 5px;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 25px;
+    left: 48px;
+    width: 90%;
+    height: 90%;
 }
 
