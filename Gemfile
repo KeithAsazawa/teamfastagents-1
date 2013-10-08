@@ -10,6 +10,7 @@ gem "paperclip", "~> 3.0"
 gem 'aws-sdk', '~> 1.5.7'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
+gem 'instagram'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -25,4 +26,5 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-fileupload-rails'
 end

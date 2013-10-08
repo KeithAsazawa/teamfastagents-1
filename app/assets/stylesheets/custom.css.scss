@@ -1,7 +1,7 @@
 @import 'bootstrap';
 @import 'bootstrap-responsive';
 @import "flat-ui";
-@media (max-width: 978px) {
+@media (max-width: 979px) {
     .container {
       padding:0;
       margin:0;
@@ -44,6 +44,16 @@ p {
 	padding: 3px;
 }
 
+.about_page {
+	border: 1px solid #DCE4EC;
+	background-color: #F6F6F6;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
 .about_page_div {
 	margin-top: 25px;
 	margin-left: 20px;
@@ -69,9 +79,12 @@ p {
 }
 
 .blog_body {
-	ul {
-		float: left;
-	}
+	border: 1px solid #DCE4EC;
+	background-color: #F6F6F6;
+	border-radius: 5px;
+	padding-top: 25px;
+	margin-bottom: 25px;
+	margin-top: 5px;
 }
 
 .blog_show {
@@ -107,8 +120,12 @@ p {
 }
 
 .contact_left {
-	margin-top: 65px;
-	margin-left: 25px !important; 
+	margin-top: 138px;
+	margin-left: 25px !important;
+	margin-bottom: 25px;
+	border: 1px solid #DCE4EC;
+	background-color: #F6F6F6;
+	border-radius: 5px;
 }
 
 .contact_page {
@@ -139,8 +156,17 @@ p {
 	}
 }
 
+.featured_box {
+	margin: 0px -2px 25px 0px;
+	border: 2px solid gray;
+	border-radius: 5px;
+	background-color: white;
+}
+
 .featured_listings {
-	background-color: #2980b9;
+	border: 1px solid #DCE4EC;
+	background-color: #2980B9;
+	border-radius: 5px;
 	padding: 5px;
 	padding-bottom: 20px;
 }
@@ -148,14 +174,14 @@ p {
 .featured_listings div {
 	/*border: solid 2px gray;*/
 	padding: 3px;
-	background-color: #fff
+	/*background-color: #fff*/
 }
 
-.featured_listings div:hover {
+/*.featured_listings span:hover {
 	box-shadow: 0px 0px 5px #fff;;
-}
+}*/
 
-.featured_listings div:hover .price {
+.featured_listings span:hover .price {
 	color: #F49E09;
 }
 
@@ -166,6 +192,15 @@ p {
 .footer {
 	background-color: #2E2E2E;
 	height: 75px;
+}
+
+.form-actions {
+	background-color: #F6F6F6 !important;
+	border-top: none !important;
+}
+
+.follow_us {
+	margin-top: 25px;
 }
 
 .gray_text {
@@ -194,6 +229,14 @@ p {
 
 .icon-google-plus-sign {
 	color: #D03E2F;
+}
+
+.iframe {
+	border: 1px solid #DCE4EC;
+	background-color: #F6F6F6;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	border-radius: 5px;
 }
 
 .logo {
@@ -225,6 +268,7 @@ p {
 	font-size: 1.75em;
 	margin-left: -15px;
 	margin-top: -15px;
+	border-radius: 5px;
 }
 
 .show_image {
@@ -232,6 +276,10 @@ p {
 	width: 300px;
 	margin-right: 20px;
 	/*border: 2px solid #E8E8E8;*/
+}
+
+.social_icons {
+	margin-bottom: 20px;
 }
 
 .time {
