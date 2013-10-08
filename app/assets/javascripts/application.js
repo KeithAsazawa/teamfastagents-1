@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-= require jquery-fileupload/basic
 //= require bootstrap
 //= require fancybox
 //= require_tree .
