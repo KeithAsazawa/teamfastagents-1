@@ -143,6 +143,10 @@ p {
 	font-size: 20px;
 }
 
+.description {
+	border-bottom: 1px solid gray;
+}
+
 .facebook {
 	color: #425F9C;
 }
@@ -239,6 +243,15 @@ p {
 	border-radius: 5px;
 }
 
+.listing_address {
+	font-size: 24px;
+	border-bottom: 1px solid gray;
+}
+
+.listings_show {
+	border: 1px solid red;
+}
+
 .logo {
 	width: 500px;
 	margin: 5px 5px 20px 0px;
@@ -311,5 +324,9 @@ p {
     left: 48px;
     width: 90%;
     height: 90%;
+}
+
+.test {
+	border: 1px solid blue;
 }
 

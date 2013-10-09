@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
 
 <% if @listing.picture_file_name %>
   <%= image_tag @listing.picture.url(:medium) %>
@@ -64,5 +64,35 @@
 </p>
 
 
-<!-- <%= link_to 'Edit', edit_listing_path(@listing) %> | -->
-<%= link_to 'Back', listings_path %>
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %> -->
+
+
+<!-- <div class="listing_show_page"> -->
+  <div class="row-fluid">
+    <div class="span8 listings_show">
+      <p class="listing_address">
+      <%= @listing.Number %> <%= @listing.Address %> <%= @listing.City %> <%= @listing.State %>, <%= @listing.Zip %>
+      </p>
+      <!-- <div class="row-fluid"> -->
+        <div class="span4">
+          <p><b>Bedrooms:</b> <%= @listing.Rooms %> beds</p>
+          <p><b>Bathrooms:</b> <%= @listing.Bathrooms %> baths</p>
+          <p><b>Size:</b> <%= @listing.SqFt %> sq ft.</p>
+          <p><b>Lot:</b> <%= @listing.Lot %> sq ft.</p>
+        </div>
+        <div class="span4">
+          <% if @listing.picture_file_name %>
+            <%= image_tag @listing.picture.url(:medium) %>
+          <% end %>
+        </div>
+        <div class="span12">
+          <b>Description</b><br />
+          <%= @listing.Description %>
+        </div>
+      <!-- </div> -->
+    </div>
+    <div class="span4 test">
+    </div>
+  </div>
+<!-- </div> -->
