@@ -33,10 +33,10 @@ h1 {
 li {
 	list-style: none;
 }
-/*
+
 p {
-	text-indent: 30px;
-}*/
+	padding-right: 30px;
+}
 
 .about_us {
 	background-color: #34495e;
@@ -52,6 +52,16 @@ p {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	padding-top: 20px;
+}
+
+.about_page_mjre {
+	width: 90%;
+	padding-right: 30px;
+}
+
+.about_page_tfa {
+	width: 90%;
+	padding-right: 30px;
 }
 
 .about_page_div {

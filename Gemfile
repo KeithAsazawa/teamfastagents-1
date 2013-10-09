@@ -11,6 +11,7 @@ gem 'aws-sdk', '~> 1.5.7'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'instagram'
+gem 'rubillow'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
