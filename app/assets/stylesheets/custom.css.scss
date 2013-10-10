@@ -99,6 +99,12 @@ p {
 
 .blog_show {
 	min-height: 650px;
+	border: 1px solid #DCE4EC;
+	background-color: #F6F6F6;
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 25px;
 }
 
 .blogs {
@@ -111,6 +117,10 @@ p {
 	margin-bottom: 25px;
 /*	padding-bottom: 15px;
 	border-bottom: 1px solid gray;*/
+}
+
+.blog_index {
+	background-image: url('assets/chromebackground.png')
 }
 
 .blog_title	{
@@ -221,6 +231,12 @@ p {
 	color: gray;
 }
 
+.gray_bar {
+	height: 70px;
+	background-color: #F7F7F7;
+	border-radius: 5px;
+}
+
 .icon-facebook-sign {
 	color: #43609C;
 }
@@ -251,6 +267,11 @@ p {
 	padding-top: 25px;
 	padding-bottom: 20px;
 	border-radius: 5px;
+}
+
+.image2 {
+	position: absolute;
+	left: 300px;
 }
 
 .listing_address {
@@ -298,6 +319,7 @@ p {
 	float: left;
 	width: 300px;
 	margin-right: 20px;
+	/*margin-left: 20px;*/
 	/*border: 2px solid #E8E8E8;*/
 }
 

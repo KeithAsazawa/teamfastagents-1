@@ -17,18 +17,31 @@
   </div>
   <div class="field">
     <%= f.label :content %><br />
-    <%= f.text_area :content, :rows => 20, :cols => 200 %>
+    <%= f.text_area :content, :rows => 10 %>
   </div>
-    <div class="field">
+  <div class="field">
     <%= f.label :image %><br />
     <%= f.file_field :image, class: "btn btn-large" %>
   </div>
 
   <%= f.fields_for :assets do |asset_fields| %>
+
+    <% if asset_fields.object.new_record? %>
     <p>
       <%= asset_fields.file_field :asset %>
-      <%= link_to image_tag(asset_fields.object.asset.url(:thumb)), asset_fields.object.asset.url(:original) %>
     </p>
+    <% end %>
+  <% end %>
+
+  <%= f.fields_for :assets do |asset_fields| %>
+
+    <% unless asset_fields.object.new_record? %>
+      <p>
+        <%= asset_fields.file_field :asset %>
+        <%= link_to image_tag(asset_fields.object.asset.url(:thumb)), asset_fields.object.asset.url(:original) %>
+        <%= asset_fields.check_box :_destroy %>
+      </p>
+    <% end %>
   <% end %>
   <div class="actions">
     <%= f.submit %>

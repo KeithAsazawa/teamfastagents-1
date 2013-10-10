@@ -92,7 +92,15 @@
         </div>
       <!-- </div> -->
     </div>
-    <div class="span4 test">
+    <div class="span4">
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <textarea rows="5">I would like to inquire about <%= @listing.Number %> <%= @listing.Address %> <%= @listing.City %> <%= @listing.State %>, <%= @listing.Zip %>.</textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </div>
   </div>
 <!-- </div> -->
