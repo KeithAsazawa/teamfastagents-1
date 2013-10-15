@@ -34,8 +34,8 @@ li {
 	list-style: none;
 }
 
-p {
-	padding-right: 30px;
+textarea {
+	height: 200px;
 }
 
 .about_us {
@@ -52,6 +52,9 @@ p {
 	margin-top: 20px;
 	padding-bottom: 20px;
 	padding-top: 20px;
+	p {
+		padding-right: 30px;
+	}
 }
 
 .about_page_mjre {
@@ -213,6 +216,12 @@ p {
 	max-height: 202px;
 }
 
+.floorplan_title {
+	border: 1px solid #DCE4EC;
+	background-color: #F6F6F6;
+	border-radius: 5px;
+}
+
 .footer {
 	background-color: #2E2E2E;
 	height: 75px;
@@ -264,9 +273,9 @@ p {
 .iframe {
 	border: 1px solid #DCE4EC;
 	background-color: #F6F6F6;
+	border-radius: 5px;
 	padding-top: 25px;
 	padding-bottom: 20px;
-	border-radius: 5px;
 }
 
 .image2 {
@@ -325,6 +334,7 @@ p {
 
 .social_icons {
 	margin-bottom: 20px;
+	margin-top: 25px;
 }
 
 .time {
@@ -339,7 +349,7 @@ p {
 
 .Flexible-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 75%;
     padding-top: 30px;
     height: 0;
     overflow: hidden;
@@ -353,7 +363,7 @@ p {
 .Flexible-container embed {
     position: absolute;
     top: 25px;
-    left: 48px;
+    left: 23px;
     width: 90%;
     height: 90%;
 }

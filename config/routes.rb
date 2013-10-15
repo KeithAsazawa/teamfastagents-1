@@ -4,9 +4,12 @@ Teamfastagents::Application.routes.draw do
   resources :listings
 
   root :to => 'pages#index'
-  # get "pages/index"
-  get 'contact' => 'pages#contact'
+
+  # get 'contact' => 'pages#contact'
   get 'about' => 'pages#about'
   get 'blog' => 'pages#blog'
   get 'floorplans' => 'pages#floorplans'
+
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+	match 'contact' => 'contact#create', :as => 'contact', :via => :post
 end
