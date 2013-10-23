@@ -6,6 +6,7 @@
 </div>
 <!-- <div class="row-fluid"></div> -->
   <div class="span9 blog_body text-center">  
+    <%= will_paginate @blogs %>
     <% @blogs.each do |blog| %>
       <div class="span4 blogs text-center">
       <ul>
@@ -15,15 +16,19 @@
         <!-- <li><%= link_to 'Show', blog %></li> -->
         <li class="time">Posted <%= time_ago_in_words(blog.created_at) %> ago.</li>
         <li><%= link_to 'Read more...', blog_path(blog) %> </li>
-        <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
-        <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <!-- <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
+        <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li> -->
       </ul>
       </div>
     <% end %>
   </div>
 <div class="span4 contact text-center">
-   <a class="twitter-timeline" href="https://twitter.com/search?q=%23fastagent" data-widget-id="386198945421991936">Tweets about "#fastagent"</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+   <a class="twitter-timeline" href="https://twitter.com/Kenny_Truong" data-widget-id="393101451611758592">Tweets by @Kenny_Truong</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
 </div>
 <div class="span4 follow_us text-center"> 
   <h4>Follow Us</h4>

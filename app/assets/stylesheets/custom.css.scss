@@ -9,6 +9,7 @@
 
     body {
       padding-top:0px !important;
+      background-image: url(image_path('chromebg.png'));
     }
 
     .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
@@ -123,7 +124,7 @@ textarea {
 }
 
 .blog_index {
-	background-image: url('assets/chromebackground.png')
+	background-image: url('images/chromebg.png')
 }
 
 .blog_title	{
@@ -153,6 +154,7 @@ textarea {
 
 .contact_page {
 	min-height: 650px;
+	background: url('/images/chromebg.png')
 }
 
 .david_brand {

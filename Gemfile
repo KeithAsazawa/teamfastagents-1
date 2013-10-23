@@ -12,6 +12,8 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'instagram'
 gem 'rubillow'
+gem 'will_paginate', '~> 3.0'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
