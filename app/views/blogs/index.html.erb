@@ -17,9 +17,14 @@
         <li class="time">Posted <%= time_ago_in_words(blog.created_at) %> ago.</li>
         <li><%= link_to 'Read more...', blog_path(blog) %> </li>
         <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
-        <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>      
+        <% if user_signed_in? %>
+          <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <% end %>      
       </ul>
       </div>
+    <% end %>
+    <% if user_signed_in? %>
+      <%= link_to "New Blog", new_blog_path %>
     <% end %>
   </div>
 <div class="span4 contact text-center">
