@@ -1,5 +1,7 @@
 Teamfastagents::Application.routes.draw do
   
+  devise_for :views
+
   resources :blogs
   resources :listings
 
