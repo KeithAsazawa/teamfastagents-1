@@ -16,8 +16,8 @@
         <!-- <li><%= link_to 'Show', blog %></li> -->
         <li class="time">Posted <%= time_ago_in_words(blog.created_at) %> ago.</li>
         <li><%= link_to 'Read more...', blog_path(blog) %> </li>
-        <!-- <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
-        <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li> -->
+        <li><%= link_to 'Edit', edit_blog_path(blog) %></li>
+        <li><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></li>      
       </ul>
       </div>
     <% end %>
