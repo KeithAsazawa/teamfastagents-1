@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131002022254) do
+ActiveRecord::Schema.define(:version => 20131023200942) do
 
   create_table "assets", :force => true do |t|
     t.string   "asset_file_name"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20131002022254) do
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
     t.integer  "price"
+    t.string   "link"
   end
 
 end

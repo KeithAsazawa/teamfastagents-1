@@ -25,7 +25,7 @@ class ListingsController < ApplicationController
   # GET /listings/new.json
   def new
     @listing = Listing.new
-    3.times { @listing.assets.build }
+    # 3.times { @listing.assets.build }
 
     respond_to do |format|
       format.html # new.html.erb
