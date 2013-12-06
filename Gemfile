@@ -7,7 +7,7 @@ gem "flat-ui-rails"
 gem 'fancybox-rails'
 gem "font-awesome-rails"
 gem "paperclip", "~> 3.0"
-gem 'aws-sdk', '~> 1.5.7'
+gem 'aws-sdk'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'instagram'
