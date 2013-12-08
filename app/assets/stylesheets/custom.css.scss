@@ -57,6 +57,12 @@ textarea {
 	}
 }
 
+.about_parkwoods {
+	background-color: #EFEFEF !important;
+	margin-top: -20px;
+	padding-bottom: 25px;
+}
+
 .about_page_mjre {
 	width: 90%;
 	/*padding-right: 30px;*/
@@ -160,6 +166,11 @@ textarea {
 	min-height: 650px;
 }
 
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
 .david_brand {
 	color: #fff !important;
 	background-color: #3498db;
@@ -201,7 +212,7 @@ textarea {
 	border-radius: 2px;
 	padding: 5px;
 	padding-bottom: 20px;
-	margin-top: -21px;
+	margin-top: 0px;
 }
 
 .featured_listings div {
