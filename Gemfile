@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '~>2.3.1.0'
 gem 'newrelic_rpm'
-gem "flat-ui-rails"
+# gem "flat-ui-rails"
 gem 'fancybox-rails'
 gem "font-awesome-rails"
 gem "paperclip", "~> 3.0"
