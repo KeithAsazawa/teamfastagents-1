@@ -189,13 +189,13 @@ textarea {
 }
 
 .david_brand {
-	color: #fff !important;
-	background-color: #3498db;
-	display: block;
+	color: #5A5A5A !important;
+	/*background-color: #3498db;*/
+	/*display: block;*/
 	float: left;
 	padding: 20px;
 	margin-left: -20px;
-	margin-bottom: -5px;
+	/*margin-bottom: -10px;*/
 	font-size: 20px;
 	a {
 		font-family: "Lato";
@@ -229,7 +229,7 @@ textarea {
 
 .featured_listings {
 	border: 1px solid #DCE4EC;
-	background-color: #F7F7F7;
+	background-color: #EFEFEF;
 	border-radius: 2px;
 	padding: 5px;
 	padding-bottom: 20px;
@@ -284,8 +284,16 @@ textarea {
 	border-radius: 5px;
 }
 
-.header_links li {
+.header_links a {
+	margin-top: 7px;
+	font-size: 14px;
 	font-family: "Lato";
+	text-shadow: none !important;
+	color: #5A5A5A !important;
+}
+
+.home_images {
+	background-color: #F7F7F7;
 }
 
 .icon-facebook-sign {
@@ -310,6 +318,19 @@ textarea {
 
 .icon-google-plus-sign {
 	color: #D03E2F;
+}
+
+.images1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.images {
+	padding-bottom: 25px;
+	img {
+	border: 1px solid #7D7D7D;
+	margin-bottom: 20px;
+	}
 }
 
 .iframe {
@@ -349,9 +370,14 @@ textarea {
 	font-size: 60px;
 }
 
-/*.navbar-inner {
-	height: 100px !important;
-}*/
+.navbar {
+	background-color: white;
+}
+
+.navbar-inner {
+	border-bottom: 1px solid gray;
+	background-color: white !important;
+}
 
 .orange_text {
 	color: #F49E09;
