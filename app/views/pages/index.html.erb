@@ -48,7 +48,7 @@
 <!-- Featured Listings -->
 <div class="row-fluid">
 	<div class="span12 featured_listings text-center">
-		<h1>Available Units</h3>
+		<h3 id="available_units">Available Units</h3>
 			<div class="row-fluid">
 				<% @listings.each do |listing| %>
 				<div class="span3 featured_box">
@@ -72,7 +72,8 @@
 						</tbody>
 					</table>
 				    <p><%= listing.Description %> <br><br>
-				    	<h4><%= link_to 'Details', listing, class: "orange_text" %></h4>
+				    	Contact us for details or to schedule a showing for this property.
+				    	<!-- <h4><%= link_to 'Details', listing, class: "orange_text" %></h4> -->
 				    </p>
 				</div>
 		<% end %>
