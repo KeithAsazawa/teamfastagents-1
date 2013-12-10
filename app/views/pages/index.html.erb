@@ -74,37 +74,39 @@
 	</div>
 </div>
 <!-- Featured Listings -->
-<div class="row-fluid">
-	<div class="span12 featured_listings text-center">
-		<h3 id="available_units">Available Units</h3>
-			<div class="row-fluid">
-				<% @listings.each do |listing| %>
-				<div class="span3 featured_box">
-					<span class="price">$<%= listing.price %></span>
-					<% if listing.picture_file_name %>
-						<%= link_to image_tag(listing.picture.url(:medium)), listing %>
-					<% end %>
-					<h4><%= listing.Number %> <%= listing.Address %></h4>
-					<small><%= listing.Address2 %></small>
-					<small><%= listing.City %> <%= listing.State %>, <%= listing.Zip %></small>
-					<table class="table">
-						<tbody>
-							<tr>
-								<td>Beds: <%= listing.Rooms  %></td>
-								<td>Baths: <%= listing.Bathrooms  %></td>
-							</tr>
-							<tr>
-								<td>SqFt: <%= listing.SqFt  %></td>
-								<td>Lot: <%= listing.Lot  %></td>
-							</tr>
-						</tbody>
-					</table>
-				    <p><%= listing.Description %> <br><br>
-				    	Contact us for details or to schedule a showing for this property.
-				    	<!-- <h4><%= link_to 'Details', listing, class: "orange_text" %></h4> -->
-				    </p>
-				</div>
-		<% end %>
+<div class="available_units">
+	<div class="row-fluid">
+		<div class="span10 offset1 featured_listings text-center">
+			<h3 id="available_units">Available Units</h3>
+				<div class="row-fluid text-center">
+					<% @listings.each do |listing| %>
+					<div id="main" class="span4 featured_box">
+						<span class="price">$<%= listing.price %></span>
+						<% if listing.picture_file_name %>
+							<%= link_to image_tag(listing.picture.url(:medium)), listing %>
+						<% end %>
+						<h4><%= listing.Number %> <%= listing.Address %></h4>
+						<small><%= listing.Address2 %></small>
+						<small><%= listing.City %> <%= listing.State %>, <%= listing.Zip %></small>
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>Beds: <%= listing.Rooms  %></td>
+									<td>Baths: <%= listing.Bathrooms  %></td>
+								</tr>
+								<tr>
+									<td>SqFt: <%= listing.SqFt  %></td>
+									<td>Lot: <%= listing.Lot  %></td>
+								</tr>
+							</tbody>
+						</table>
+					    <p><%= listing.Description %> <br><br>
+					    	Contact us for details or to schedule a showing for this property.
+					    	<!-- <h4><%= link_to 'Details', listing, class: "orange_text" %></h4> -->
+					    </p>
+					</div>
+			<% end %>
+			</div>
 		</div>
 	</div>
 </div>

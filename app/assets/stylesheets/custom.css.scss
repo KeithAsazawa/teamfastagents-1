@@ -47,6 +47,11 @@ textarea {
 	margin-bottom: 25px;
 }
 
+#main {
+	/*margin: 20px auto;*/
+	/*float: none;*/
+}
+
 .about_us {
 	background-color: #34495e;
 	color: #fff;
@@ -116,6 +121,22 @@ textarea {
 
 .about_page {
 	min-height: 650px;
+}
+
+.address {
+	padding-top: 60px;
+	p {
+		color: #636A70;
+		font-size: 18px;
+	}
+	h3 {
+		color: #EE5B34;
+	}
+}
+
+.available_units {
+	background-color: #EFEFEF;
+	border: 1px solid #DCE4EC;
 }
 
 .blog_body {
@@ -205,6 +226,9 @@ textarea {
 		font-family: "Lato";
 		font-size: 20px;
 	}
+	a:hover {
+		background-color: none !important;
+	}
 }
 
 .description {
@@ -233,7 +257,6 @@ textarea {
 }
 
 .featured_listings {
-	border: 1px solid #DCE4EC;
 	background-color: #EFEFEF;
 	border-radius: 2px;
 	padding: 5px;
@@ -267,7 +290,7 @@ textarea {
 
 .footer {
 	background-color: #2E2E2E;
-	height: 75px;
+	min-height: 305px;
 }
 
 .form-actions {
@@ -391,7 +414,7 @@ textarea {
 	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%) !important; /* IE10+ */
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%) !important; /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ) !important; /* IE6-9 */
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #DBDBDB !important;
 }
 
 .orange_text {
@@ -406,8 +429,8 @@ textarea {
 	padding: 10px;
 	float: left;
 	font-size: 1.75em;
-	margin-left: -5px;
-	margin-top: -3px;
+	margin-left: 1px;
+	margin-top: 1px;
 	border-radius: 5px;
 }
 
@@ -417,6 +440,13 @@ textarea {
 	margin-right: 20px;
 	/*margin-left: 20px;*/
 	/*border: 2px solid #E8E8E8;*/
+}
+
+.social {
+	padding-top: 56px;
+	h3 {
+		color: #EE5B34;
+	}
 }
 
 .social_icons {
