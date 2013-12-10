@@ -125,6 +125,7 @@ textarea {
 
 .address {
 	padding-top: 60px;
+	margin-left: 0px !important;
 	p {
 		color: #636A70;
 		font-size: 18px;
@@ -254,6 +255,9 @@ textarea {
 	/*border-radius: 5px;*/
 	background-color: white;
 	min-height: 500px !important;
+	img {
+		padding-top: 15px;
+	}
 }
 
 .featured_listings {
@@ -429,8 +433,8 @@ textarea {
 	padding: 10px;
 	float: left;
 	font-size: 1.75em;
-	margin-left: 1px;
-	margin-top: 1px;
+	margin-left: -11px;
+	margin-top: 6px;
 	border-radius: 5px;
 }
 
@@ -444,6 +448,7 @@ textarea {
 
 .social {
 	padding-top: 56px;
+	margin-left: 0px !important;
 	h3 {
 		color: #EE5B34;
 	}
@@ -456,6 +461,12 @@ textarea {
 
 .time {
 	color: gray;
+}
+
+.tfa_login {
+	margin-left: 5px !important;
+	margin-top: 17px !important;
+	background-color: #FD643B !important;
 }
 
 .white_text {
