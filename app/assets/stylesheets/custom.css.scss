@@ -396,8 +396,7 @@ textarea {
 }
 
 .mjre {
-	height: 32px;
-	margin: 22px 0px 0px 15px;
+	margin-top: 20px;
 }
 
 .mjre_number {
@@ -456,7 +455,7 @@ textarea {
 
 .social_icons {
 	margin-bottom: 20px;
-	margin-top: 25px;
+	margin-top: 40px;
 }
 
 .time {
@@ -465,8 +464,10 @@ textarea {
 
 .tfa_login {
 	margin-left: 5px !important;
-	margin-top: 17px !important;
+	margin-top: 8px !important;
 	background-color: #FD643B !important;
+	height: 14px !important;
+	box-shadow: 2px !important;
 }
 
 .white_text {

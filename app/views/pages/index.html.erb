@@ -76,11 +76,11 @@
 <!-- Featured Listings -->
 <div class="available_units">
 	<div class="row-fluid">
-		<div class="span10 offset1 featured_listings text-center">
+		<div class="span8 offset2 featured_listings text-center">
 			<h3 id="available_units">Available Units</h3>
 				<div class="row-fluid text-center">
 					<% @listings.each do |listing| %>
-					<div id="main" class="span4 featured_box">
+					<div id="main" class="span6 featured_box">
 						<span class="price">$<%= listing.price %></span>
 						<% if listing.picture_file_name %>
 							<%= link_to image_tag(listing.picture.url(:medium)), listing %>
@@ -95,8 +95,8 @@
 									<td>Baths: <%= listing.Bathrooms  %></td>
 								</tr>
 								<tr>
-									<td>SqFt: <%= listing.SqFt  %></td>
-									<td>Lot: <%= listing.Lot  %></td>
+									<td>Single Family: <%= listing.SqFt  %> sq ft</td>
+									<td>Lot Size: <%= listing.Lot  %> sq ft</td>
 								</tr>
 							</tbody>
 						</table>
